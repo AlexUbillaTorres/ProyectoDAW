@@ -2,43 +2,47 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>Consultorio Web</title>
+  <title> TodosMisServicios.ec</title>
   <meta name="description" content="Servicios">
-  <link rel="stylesheet" href="css/style-screen.css" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-screen.css" media="screen">
 </head>
 
 <body>
-  <header >
-    <h1>Consultorio Web</h1>  
+  <header>
+    <div class="container-fluid"><h1>TodosMisServicios.ec </h1> </div>
+     
   </header>
-  <nav> 
-    <ul id="menu">
-      <li>
-      <a href="index.html">Principal</a>
-      </li>          
-      <li>
-      <a href="quienes somos.html">¿Quienes Somos?</a>
-      </li>          
-      <li>  
-      <a href="afiliados.html">Afiliados</a>
-      </li>        
-      <li>
-      <a href="doctores.html">Doctores</a>
-      </li> 
-      <li>
-      <a href="medicamentos.html">Medicamentos</a>
+  <nav>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">Principal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="quienes somos.html">¿Quienes Somos?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="personal.html">Personal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="encuentranos.html">Encuentranos</a>
       </li>
     </ul>
+    
   </nav>
-  <div class="contenido">
-  <aside>
-    <div>
-      <h1>¿Cómo usar nuestro sitio?</h1>
-      <video controls>
-        <source src="https://www.youtube.com/watch?v=jXfGbKkys0E" >
-      </video>     
-    </div>
-    <div class="twitter">
+</div>
+     <div class="container">
+      <div class="row">
+        <div class="col-4">
+    <aside>
+      <div>
+        <h1>¿Cómo usar nuestro sitio?</h1>
+        <video controls>
+          <source src="https://www.youtube.com/watch?v=jXfGbKkys0E" >
+        </video> 
+      </div>
+      <div class="twitter">
         <h2>Stream</h2>
         <div id="tweets">
           <div class="tweet" id="tweet-1">  
@@ -56,11 +60,16 @@
           </div>
         </div>
       </div>
-  </aside>
+    </aside>
   </div>
-  <section>
-     <h1>Medicina Disponible</h1>
-    <article id="b1">
+
+    <div class="col-8">
+    <section>
+      <h2>Medicina Disponible</h2>
+      <div class="container">
+      <div class="row">
+    <div class="col">
+          <article id="b1">
 
         <div class="cabecera-articulo">
           <h3>Aspirina</h3>
@@ -69,7 +78,9 @@
           <img src="http://m.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/05/data17334412.jpg" alt="">
         </div>
       </article>
-      <article id="b2">
+          </div>
+  <div class="col">
+          <article id="b2">
         <div class="cabecera-articulo">
           <h3>Paracetamol</h3>
         </div>
@@ -77,7 +88,9 @@
           <img src="http://www.dccomics.com/sites/default/files/GalleryChar_1900x900_MOS_52e05e3fe24a61.04593858.jpg" alt="">
         </div>
       </article>
-        <article id="b3">
+          </div>
+  <div class="col">
+           <article id="b3">
         <div class="cabecera-articulo">
           <h3>Anefdol</h3>
         </div>
@@ -85,7 +98,9 @@
           <img src="http://m.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/05/data17334412.jpg" alt="">
         </div>
       </article>
-      <article id="b4">
+          </div>
+  <div class="col">
+           <article id="b4">
         <div class="cabecera-articulo">
           <h3>Simepar</h3>
         </div>
@@ -93,13 +108,22 @@
           <img src="http://m.eluniverso.com/sites/default/files/styles/nota_ampliada_normal_foto/public/fotos/2017/05/data17334412.jpg" alt="">
         </div>
       </article>
-  </section>
-  <footer> 
-    <div> &copy El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción tota, parcial, comunicación o distribución sin autorización previa del titular. 2018 </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
 
-    <img id="footer" src="images/espol.jpg" >
-
+    <footer> 
+    <div class="container"> 
+      <div class="row">
+        <div id="footer">
+          &copy El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción tota, parcial, comunicación o distribución sin autorización previa del titular. 2018
+        </div>
+        <div id="foot-img"><img id="footer" src="images/espol.jpg"></div>
+      </div>      
+    </div> 
   </footer>
-  
+
 </body>
 </html>
