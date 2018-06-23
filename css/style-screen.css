@@ -6,13 +6,14 @@ header{
   text-align: center;
   color: white;
   font-size: 1.2em;
-  background-color: rgb(0,100,100);
+  background-color: rgb(35,90,125);
 }
  
 .nav{
-  border: 0.001em solid black;
+ 
   padding:0.5em;
-  background-color: rgb(25,75,110);
+  background-color: rgb(143,204,230);
+  margin-bottom: 1%;
 }
 
 .nav-item{
@@ -23,16 +24,16 @@ header{
 ul li:hover a{
   background-color: rgb(25,70,90);
   opacity: 0.9;
-  color: white;
+  color: rgb(0,0,0);
 }
 
-h2{
+h3{
   text-align: center;
 }
 
 /* visited link */
 a:visited {
-  color: rgb(0,0,0);
+  color: rgb(255,255,255);
   font-weight: bold;
 }
 
@@ -42,28 +43,34 @@ a:active {
 }
 
 
-section{
+/*section{
   border: 1px solid black;  
-}
-.col-sm-3, .col-sm {
+}*/
+
+/*[class ^= "col"]{
   border: 1px solid black;
-}
+}*/
+
 aside{ 
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   text-align: center;
 }
 
 video{
-  width: 100%;
+  margin: auto;
+  width: 90%;
   height: 50%;
 }
-
-[class = "btn btn-primary"]{
+.thumbnail{
+  background: linear-gradient(white, powderblue, white);
   text-align: center;
+  padding-top: 1%;
+
 }
 
 div.thumbnail img{
-
+  margin: auto;
+  display: block;
   border: groove;
   height: 9em;
   width: 14em;
@@ -71,23 +78,18 @@ div.thumbnail img{
 
 
 footer{
+  margin-top: 1%;
   border: 0.001em solid black;
-  font-size: 0.8em;
-  text-align: justify;
+  font-size: 0.9em;
+  text-align: justify-all;
 }
 
 img#footer{
-  height: 5em;
-  width: 5em;
+  height: 4em;
+  width: 4em;
+  margin: auto;
+  display: block;
 }
-
-#footer{
-  width: 80%;
-}
-#foot-img{
-  width: 20%;
-}
-
 
 @media screen and (max-width: 420px){        
   *{
@@ -103,5 +105,6 @@ img#footer{
   header h1 {
     font-size: 3em;  
     font-weight: normal
-  }   
+  } 
+
 }
