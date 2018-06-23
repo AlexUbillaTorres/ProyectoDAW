@@ -1,0 +1,19 @@
+<doctores>
+	<doctor>
+		<nombre>Dr. Carlos Jácome</nombre>
+		<especialidad>Proctólogo</especialidad>
+	</doctor>
+	<doctor>
+		<nombre>Dr. José Muñoz</nombre>
+		<especialidad>Cardiólogo</especialidad>
+	</doctor>
+	<doctor>
+		<nombre>Dra. Gabriela Rodríguez</nombre>
+		<especialidad>Pediatra</especialidad>
+	</doctor>
+	<doctor>
+		<nombre>Dr. Luís Quinde</nombre>
+		<especialidad>Neurólogo</especialidad>
+	</doctor>
+	
+</doctores>

@@ -76,6 +76,13 @@ div.thumbnail img{
   width: 14em;
 }
 
+.imagenqs{
+  margin: auto;
+  display: block;
+  
+  height: 9em;
+  width: 10em;
+}
 
 footer{
   margin-top: 1%;

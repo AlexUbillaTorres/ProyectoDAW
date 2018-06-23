@@ -1,0 +1,30 @@
+<hospitales>
+	<hospital>
+		<nombre>Hospital del Día Dr. Efrén Jurado López</nombre>
+		<direccion>Argentina.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Hospital Efren Jurado Lopez</nombre>
+		<direccion>argentina y eloy alfaro.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Centro de Atención Ambulatoria Central Guayas</nombre>
+		<direccion>Alberto Reyna 204 y, Villamil.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Hospital León Becerra de Guayaquil</nombre>
+		<direccion>2402 Eloy Alfaro Delgado.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Hospital Alcívar</nombre>
+		<direccion>Idelfonso Coronel y Mendez 2301.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Hospital del Niño, Dr Fransisco de Icaza Bustamante</nombre>
+		<direccion>Av. Quito.</direccion>
+	</hospital>
+	<hospital>
+		<nombre>Clínica Sur Hospital</nombre>
+		<direccion>José Mascote.</direccion>
+	</hospital>
+</hospitales>
