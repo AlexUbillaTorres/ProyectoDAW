@@ -1,6 +1,12 @@
 *{
   font-family: Metal;  
 }
+[class = "imagenqs"] {
+    border-radius: 8%;
+}
+p{
+  text-align: justify;
+}
 
 header{
   text-align: center;
@@ -44,12 +50,19 @@ a:active {
 
 
 /*section{
-  border: 1px solid black;  
+  border: 1px solid black;
+
 }*/
 
-/*[class ^= "col"]{
-  border: 1px solid black;
-}*/
+[class ^= "col"]{
+  
+  margin: 1%;
+}
+
+.media{
+  display: inline-block;
+}
+
 
 aside{ 
   /*border: 1px solid black;*/

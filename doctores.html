@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/app.js"></script><
   <link rel="stylesheet" href="css/style-screen.css" media="screen">
 </head>
 
@@ -58,11 +60,12 @@
           <h3>Doctores</h3>
           <div class="row">
             <div class="dropdown">
+              
               <button class="btn btn-default dropdown-toggle" type="button" id="menuhospital" data-toggle="dropdown">Hospitales
               <span class="caret"></span></button>
               <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                 <li role="presentation" class="dropdown-header">Guayaquil</li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hospital Guayaquil</a></li>
+                <li role="presentation" id="gye"><a role="menuitem" tabindex="-1" href="#">Hospital Guayaquil</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hospital del Niño</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hospital Luis Vernaza</a></li>
                 <li role="presentation" class="divider"></li>
@@ -70,7 +73,7 @@
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hospital Carlos Marín</a></li>
               </ul>
             </div>
-            
+                       
           </div>
         </section>
       </div>
