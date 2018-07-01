@@ -37,6 +37,10 @@ h3{
   text-align: center;
 }
 
+a#tiempo{
+  color: rgb(0,0,255);
+}
+
 /* visited link */
 a:visited {
   color: rgb(255,255,255);
@@ -48,7 +52,9 @@ a:active {
   font-weight: bold;
 }
 
-
+section h4, h5{
+  font-family: 'Roboto', sans-serif;
+}
 /*section{
   border: 1px solid black;
 
@@ -63,6 +69,22 @@ a:active {
   display: inline-block;
 }
 
+div#contacto{
+  margin-top: 10%;
+}
+
+div#contact{
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+div#misi{
+  margin-bottom: 5%;
+}
+
+h3#mision{
+  margin-bottom: 10%;
+}
 
 aside{ 
   /*border: 1px solid black;*/
@@ -127,4 +149,36 @@ img#footer{
     font-weight: normal
   } 
 
+}
+
+
+#timeline {
+    columns: 40em;
+    padding: 0 0 0 0.33em;
+    font-size: medium;
+    margin: 2.4em 0;
+}
+
+
+
+#timeline time::after {
+    content: " —";
+    color: orange;
+}
+
+#timeline li {
+    display: block;
+    padding-left: 0.33em;
+    margin-left: 11em;
+    border-left: solid orange;
+    text-align: left;
+}
+
+#timeline time {
+    display: inline-block;
+    width: 13em;
+    margin-left: -13.4em;
+    font-weight: bold;
+    text-align: right;
+    font-size: 90%;
 }
