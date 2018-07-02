@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style-screen.css" media="screen">
+      <script src="js/form-cont.js"></script>
   </head>
 
   <body>
@@ -23,7 +24,7 @@
             <a class="nav-link " href="index.html">Principal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quienes somos.html">¿Quienes Somos?</a>
+            <a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hospitales.html">Hospitales</a>
@@ -66,7 +67,7 @@
           <section>
             <h3>Contáctanos</h3>
              
-              <form>
+              <form id="contact">
 
                 <div class="form-group">
                   <label for="inputnombre">Nombres y Apellidos</label>
@@ -79,7 +80,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="inputnum">Teléfono</label>
+                  <label >Teléfono</label>
                   <input type="text" class="form-control" id="inputnunm" placeholder="Teléfono">
                   <small id="emailHelp" class="form-text text-muted">Ej. 0999999999 / 042444444</small>
                 </div>
@@ -119,7 +120,7 @@
                   <textarea class="form-control" id="textareamensaje" rows="3"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
               </form>
             
           </section>
@@ -131,11 +132,11 @@
       <div class="container"> 
         <div class="row">
           <div class = "col-sm">
-            <p>&copy El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción total, parcial, comunicación o distribución sin autorización previa del titular. 2018</p>
+            <p>&copy; El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción total, parcial, comunicación o distribución sin autorización previa del titular. 2018</p>
           </div>
 
           <div class="col-sm-2">
-            <img id="footer" src="images/hosp-icon.png">
+            <img id="footer" src="images/hosp-icon.png" alt="Footer">
           </div>
         </div>
 

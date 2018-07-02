@@ -1,0 +1,19 @@
+canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+#chart-legend-1{
+    margin=1%;
+}
+
+#grafico {
+    
+    width: 90%;
+    height: 50%;
+    margin:1%;
+}
+
+#estadisticos{
+    margin:1%;
+}

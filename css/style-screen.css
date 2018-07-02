@@ -44,6 +44,10 @@ div#geomapa {
     padding: 1%;
 }
 
+div#mapa {
+  box-shadow: 5px 5px 10px rgb(211,211,211);
+}
+
 a#tiempo{
   color: rgb(0,0,255);
 }
@@ -98,6 +102,12 @@ aside{
   text-align: center;
 }
 
+form.form-blog:nth-child(1){
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
 video{
   margin: auto;
   width: 90%;
@@ -124,6 +134,14 @@ div.thumbnail img{
   
   height: 9em;
   width: 10em;
+}
+
+.imagenusr{
+  margin: auto;
+  display: block;
+  box-shadow: 5px 5px 5px rgb(211,211,211);
+  height: 7em;
+  width: 7em;
 }
 
 footer{

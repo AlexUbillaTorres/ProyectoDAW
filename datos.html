@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style-screen.css" media="screen">
+      <script src="charts/Chart.bundle.js"></script>
+	<script src="charts/utils.js"></script>
+    <script src="css/style-chart.css"></script>
   </head>
   
   <body>
@@ -23,7 +26,7 @@
             <a class="nav-link " href="index.html">Principal</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="quienes somos.html">¿Quienes Somos?</a>
+            <a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="hospitales.html">Hospitales</a>
@@ -64,26 +67,144 @@
 
         <div class="col-sm">
           <section>
-            <h3>Datos Estadísticos</h3>
-            <div class="row">
+              <h3>Datos Estadísticos</h3>
+                
+              <div class="row" id="estadisticos">
+                  <div class="col sm-8">
+                      <div class="chart-container" id="grafico">
+			             <canvas id="chart-legend-1"></canvas>
+                      </div>
+                  <script>
+		var color = Chart.helpers.color;
+		function createConfig(legendPosition, colorName) {
+			return {
+				type: 'line',
+				data: {
+					labels: ['H. Gye', 'H. del Niño', 'H. L. Vernaza', 'H. E. Gilbert', 'H. L. Becerra', 'H. Alcívar', 'H. Universitario'],
+					datasets: [{
+						label: 'Afluencia de personas por Hospitles',
+						data: [
+							20,
+							56,
+							24,
+							80,
+							50,
+                            87,
+                            50
+						],
+						backgroundColor: color(window.chartColors[colorName]).alpha(0.5).rgbString(),
+						borderColor: window.chartColors[colorName],
+						borderWidth: 1
+					}]
+				},
+				options: {
+					responsive: true,
+					legend: {
+						position: legendPosition,
+					},
+					scales: {
+						xAxes: [{
+							display: true,
+							scaleLabel: {
+								display: true,
+								labelString: 'Hospitales'
+							}
+						}],
+						yAxes: [{
+							display: true,
+							scaleLabel: {
+								display: true,
+								labelString: 'Personas'
+							}
+						}]
+					},
+					title: {
+						display: true,
+						text: 'Histograma de personas' 
+					}
+				}
+			};
+		}
+		window.onload = function() {
+			[{
+				id: 'chart-legend-1',
+				legendPosition: 'top',
+				color: 'green'
+			}].forEach(function(details) {
+				var ctx = document.getElementById(details.id).getContext('2d');
+				var config = createConfig(details.legendPosition, details.color);
+				new Chart(ctx, config);
+                
+			});
+		};
+	</script>
+                  
+                  </div>
+                  
+              </div>
+                
+              
+            
               <h3>Línea de Tiempo</h3>
               <ul id="timeline">
-                <li id="time">
+                <li id="time1">
                   <time datetime="2016-07-06">
                     6 de Julio 2016
                   </time>
                     Nuevo Hospital
-                  <a id="tiempo" href="https://www.eluniverso.com/guayaquil/2017/03/30/nota/6115933/se-inaugura-nuevo-hospital-iess-ceibos">IESS Ceibos</a>
+                  <a  href="https://www.eluniverso.com/guayaquil/2017/03/30/nota/6115933/se-inaugura-nuevo-hospital-iess-ceibos">IESS Ceibos</a>
                 </li>
-                <li id="time">
+                <li id="time2">
                   <time datetime="1973-10-07">
                     7 de octubre 1973
                   </time>
                     Nace
-                  <a id="tiempo" href="https://www.hagp.gob.ec/index.php/el-hospital/historia">Hospital Guayaquil</a>
+                  <a href="https://www.hagp.gob.ec/index.php/el-hospital/historia">Hospital Guayaquil</a>
+                </li>
+                  <li id="time3">
+                  <time datetime="1970-08-06">
+                    6 de Agosto 197020
+                  </time>
+                    Nace 
+                  <a id="tiempo" href="https://www.iess.gob.ec/">IESS </a>
+                </li>
+                <li id="time4">
+                 
+                    <time datetime="1968-05-20">
+                    20 de Mayo 1968
+                  </time>
+                    Caja de Pensiones
+                  
+                </li>
+                  <li id="time5">
+                    <time datetime="1937-01-28">
+                    28 de Enero 1937
+                  </time>
+                    Caja del seguro Social
+                  
+                </li>
+                <li id="time6">
+                  <time datetime="1935-10-07">
+                    7 de octubre 1935
+                  </time>
+                      Instituto Nacional de previsión                
+                </li>
+                  <li id="time7">
+                  <time datetime="1905-12-11">
+                    11 de Diciembre 1905 
+                  </time>
+                    Nace 
+                  <a href="https://www.eluniverso.com/guayaquil/2017/03/30/nota/6115933/se-inaugura-nuevo-hospital-iess-ceibos">Hospital Becerra</a>
+                </li>
+                <li id="time8">
+                  <time datetime="1563-11-25">
+                    25 de noviembre de 1563
+                  </time>
+                    Nace
+                  <a href="https://www.hagp.gob.ec/index.php/el-hospital/historia">Hospital Vernaza</a>
                 </li>
               </ul>
-            </div>
+            
           </section>
         </div>
       </div>
@@ -93,11 +214,11 @@
       <div class="container"> 
         <div class="row">
           <div class = "col-sm">
-            <p>&copy El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción total, parcial, comunicación o distribución sin autorización previa del titular. 2018</p>
+            <p>&copy; El contenido de esta obra es de propiedad intelectual de nuestro grupo. Todos los derechos reservado. Prohibida su reproducción total, parcial, comunicación o distribución sin autorización previa del titular. 2018</p>
           </div>
 
           <div class="col-sm-2">
-            <img id="footer" src="images/hosp-icon.png">
+            <img id="footer" src="images/hosp-icon.png" alt="Footer">
           </div>
         </div>
 
