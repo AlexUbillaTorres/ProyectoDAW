@@ -9,7 +9,7 @@ function onSuccess(data){
     });
 
 }
-function cargarCitas(){
+function cargarMedicamentos(){
 	
 
 	$.ajax({
@@ -20,8 +20,31 @@ function cargarCitas(){
 		success: onSuccess
 	});
 }
+function doctores(data){
+	
+	$(data).find('doctor').each(function(){
+	    var nombre = $(this).find('nombre').text();
+		var especialidad = $(this).find('especialidad').text();
+        $("#doctor").show()
+        $("#doctor").append("<tr><td>"+nombre+"</td><td>"+especialidad+"</td></tr>");
+		
+    });
+
+}
+function cargarDoctores(){
+	
+
+	$.ajax({
+		type: "GET",
+		url: "data/doctores.xml",
+		contentType: "text/xml",  
+		dataType: "xml",
+		success: doctores
+	});
+}
 (function(){
-	document.getElementById("med").onclick = cargarCitas;
+	document.getElementById("med").onclick = cargarMedicamentos;
+    document.getElementById("doct").onclick = cargarDoctores;
 	
     
 })();

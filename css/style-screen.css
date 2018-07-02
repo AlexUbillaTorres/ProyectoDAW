@@ -84,7 +84,7 @@ div#contacto{
   margin-top: 10%;
 }
 
-table#content{
+table#content, table#doctor{
     display: none;
     
     border-collapse: collapse;
@@ -106,6 +106,9 @@ th#medica{
     width: 20%
 }
 
+th#doctores{
+    width: 30%
+}
 
 
 div#contact{

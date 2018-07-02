@@ -12,8 +12,19 @@
 		<especialidad>Pediatra</especialidad>
 	</doctor>
 	<doctor>
-		<nombre>Dr. Luís Quinde</nombre>
+		<nombre>Dr. Gabriel Tobar</nombre>
 		<especialidad>Neurólogo</especialidad>
+	</doctor>	
+    <doctor>
+		<nombre>Dr. Antonio Palacios</nombre>
+		<especialidad>Alergólogo</especialidad>
 	</doctor>
-	
+	<doctor>
+		<nombre>Dra. Kirk De La Torre</nombre>
+		<especialidad>Ginecólogo</especialidad>
+	</doctor>
+	<doctor>
+		<nombre>Dr. Karla Calderòn</nombre>
+		<especialidad>Odontología</especialidad>
+	</doctor>
 </doctores>
