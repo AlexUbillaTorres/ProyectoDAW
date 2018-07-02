@@ -4,8 +4,12 @@
 		<descripcion>Se emplea como antiinflamatorio, analgésico, antipirético y antiagregante.</descripcion>
 	</medicamento>
 	<medicamento>
-		<nombre>Paracetamol</nombre>
+		<nombre>Umbral</nombre>
 		<descripcion>Indicado principalmente para el alivio del dolor y disminuir la temperatura en personas con fiebre..</descripcion>
+	</medicamento>
+	<medicamento>
+		<nombre>Paracetamol</nombre>
+		<descripcion>Se emplea como antiinflamatorio y para la fiebre.</descripcion>
 	</medicamento>
 	<medicamento>
 		<nombre>Anefdol</nombre>
@@ -13,6 +17,6 @@
 	</medicamento>
 	<medicamento>
 		<nombre>Simepar</nombre>
-		<descripcion>Se emplea como protector del hígado.</descripcion>
+		<descripcion>Se emplea como antiinflamatorio, analgésico, antipirético y antiagregante.</descripcion>
 	</medicamento>
 </medicamentos>

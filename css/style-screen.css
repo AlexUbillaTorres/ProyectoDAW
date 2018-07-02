@@ -84,6 +84,30 @@ div#contacto{
   margin-top: 10%;
 }
 
+table#content{
+    display: none;
+    
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(176,224,230);
+    opacity: 0.65;
+    text-align: justify;
+    margin: 2%;
+    
+}
+table, th, td{
+    border: 1px solid rgb(122,122,122);
+}
+th, td{
+    padding: 2%;
+    
+}
+th#medica{
+    width: 20%
+}
+
+
+
 div#contact{
   margin-top: 10%;
   margin-bottom: 15%;

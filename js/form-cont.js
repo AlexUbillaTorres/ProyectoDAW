@@ -1,11 +1,8 @@
-(function(){
-    
-    
-})();
-
-$("#enviar").click(env);
-
 function env(){
-    console.log("Formulario Enviado")
+    alert('Formulario Enviado');
 }
 
+(function(){
+    document.getElementById("btnenviar").onclick = env;
+    
+})();
